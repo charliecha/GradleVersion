@@ -3,18 +3,18 @@ plugins {
     id 'kotlin-android'
 }
 
-apply from: '../versions.gradle'
+//apply from: '../versions.gradle'
 
 android {
-    compileSdkVersion versions.compileSdkVersion
-    buildToolsVersion versions.buildToolsVersion
+    compileSdkVersion BuildVersion.compileSdkVersion
+    buildToolsVersion BuildVersion.buildToolsVersion
 
     defaultConfig {
         applicationId "com.example.gradleversion"
-        minSdkVersion versions.minSdkVersion
-        targetSdkVersion versions.targetSdkVersion
-        versionCode versions.versionCode
-        versionName versions.versionName
+        minSdkVersion BuildVersion.minSdkVersion
+        targetSdkVersion BuildVersion.targetSdkVersion
+        versionCode BuildVersion.versionCode
+        versionName BuildVersion.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,15 +35,15 @@ android {
 }
 
 dependencies {
-    implementation libs.kotlin_stdlib
-    implementation libs.core_ktx
-    implementation libs.appcompat
-    implementation libs.material
+    implementation Libs.kotlin_stdlib
+    implementation Libs.core_ktx
+    implementation Libs.appcompat
+    implementation Libs.material
 
-    implementation libs.constraintlayout
-    implementation libs.livedata
-    implementation libs.viewmodel
-    testImplementation libs.junit
+    implementation Libs.constraintlayout
+    implementation Libs.livedata
+    implementation Libs.viewmodel
+    testImplementation Libs.junit
 
-    implementation libs.retrofit
+    implementation Libs.retrofit
 }
