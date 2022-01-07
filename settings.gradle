@@ -1,1 +1,4 @@
 include ':app'
+include ':example'
+
+includeBuild("plugin-build")
