@@ -48,7 +48,9 @@ dependencies {
     implementation Libs.constraintlayout
     implementation Libs.livedata
     implementation Libs.viewmodel
-    testImplementation Libs.junit
+//    testImplementation Libs.junit
 
     implementation Libs.retrofit
+
+    implementation templateExampleConfig.junit()
 }

@@ -12,6 +12,11 @@ abstract class TemplateExtension @Inject constructor(project: Project) {
 
     private val objects = project.objects
 
+    fun junit() : String {
+        return junit
+    }
+
+
     // Example of a property that is mandatory. The task will
     // fail if this property is not set as is annotated with @Optional.
     val message: Property<String> = objects.property(String::class.java)
