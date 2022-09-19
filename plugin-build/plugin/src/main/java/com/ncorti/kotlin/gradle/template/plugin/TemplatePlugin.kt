@@ -5,7 +5,7 @@ import org.gradle.api.Project
 
 const val EXTENSION_NAME = "templateExampleConfig"
 const val TASK_NAME = "templateExample"
-const val junit = "junit:junit:4.+"
+const val junit = "junit:junit:4.12"
 
 abstract class TemplatePlugin : Plugin<Project> {
     override fun apply(project: Project) {

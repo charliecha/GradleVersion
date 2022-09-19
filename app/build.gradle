@@ -11,8 +11,8 @@ templateExampleConfig {
 //apply from: '../versions.gradle'
 
 android {
-    compileSdkVersion BuildVersion.compileSdkVersion
-    buildToolsVersion BuildVersion.buildToolsVersion
+    compileSdkVersion BuildConfig.compileSdkVersion
+    buildToolsVersion com.ncorti.kotlin.gradle.template.plugin.BuildConfig2.buildToolsVersion
 
     defaultConfig {
         applicationId "com.example.gradleversion"
